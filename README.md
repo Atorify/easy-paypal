@@ -1,17 +1,17 @@
-# easy-paypal
+# @atorify/easy-paypal
 
 Makes PayPal automation easy.
 
 ## Install
 
 ```
-$ npm install easy-paypal
+$ npm install @atorify/easy-paypal
 ```
 
 ## Usage
 
 ```js
-const easyPaypal = require("easy-paypal");
+const easyPaypal = require("@atorify/easy-paypal");
 const express = require("express");
 const app = express();
 
