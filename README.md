@@ -17,7 +17,7 @@ const app = express();
 
 // setting up the config/client
 easyPaypal.Paypal.SandboxClient("client token", "secret token"); // you can use Client() instead of SandboxClient() for live production.
-easyPaypal.Paypal.Config("product name", /*price here (integer/double)*/ 10, /*redirect to any link when finished purchasing*/ "http://127.0.0.1/success");
+easyPaypal.Paypal.Config("product name", /*price here (float)*/ 10, /*redirect to any link when finished purchasing*/ "http://127.0.0.1/success");
 
 app.get("/buy", async (req, res) => {
     res.redirect(await easyPaypal.Paypal.Start()); // automatically creates an order and redirects to the paypal purchase page.
